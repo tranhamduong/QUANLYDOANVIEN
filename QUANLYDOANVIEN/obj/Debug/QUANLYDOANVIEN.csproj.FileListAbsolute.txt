@@ -1,0 +1,9 @@
+D:\Homework\OOAD\Source Code\QUANLYDOANVIEN\QUANLYDOANVIEN\obj\Debug\QUANLYDOANVIEN.csprojAssemblyReference.cache
+D:\Homework\OOAD\Source Code\QUANLYDOANVIEN\QUANLYDOANVIEN\obj\Debug\QUANLYDOANVIEN.csproj.ResolveComReference.cache
+D:\Homework\OOAD\Source Code\QUANLYDOANVIEN\QUANLYDOANVIEN\obj\Debug\QUANLYDOANVIEN.GUI.ChuyenSinhHoatDoan_View.resources
+D:\Homework\OOAD\Source Code\QUANLYDOANVIEN\QUANLYDOANVIEN\obj\Debug\QUANLYDOANVIEN.GUI.PheSoDoan_View.resources
+D:\Homework\OOAD\Source Code\QUANLYDOANVIEN\QUANLYDOANVIEN\obj\Debug\QUANLYDOANVIEN.GUI.QL_DoanVien_View.resources
+D:\Homework\OOAD\Source Code\QUANLYDOANVIEN\QUANLYDOANVIEN\obj\Debug\QUANLYDOANVIEN.BUS.SuaChiTietChucVu.resources
+D:\Homework\OOAD\Source Code\QUANLYDOANVIEN\QUANLYDOANVIEN\obj\Debug\QUANLYDOANVIEN.GUI.TaoDotDanhGia.resources
+D:\Homework\OOAD\Source Code\QUANLYDOANVIEN\QUANLYDOANVIEN\obj\Debug\QUANLYDOANVIEN.GUI.ThemChiTietChucVu.resources
+D:\Homework\OOAD\Source Code\QUANLYDOANVIEN\QUANLYDOANVIEN\obj\Debug\QUANLYDOANVIEN.csproj.GenerateResource.cache
