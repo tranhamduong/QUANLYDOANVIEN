@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1748B2F1-34BA-4452-8C37-4D715F0F90DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QUANLYDOANVIEN</RootNamespace>
+    <AssemblyName>QUANLYDOANVIEN</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\ChiTietChucVuBUS.cs" />
+    <Compile Include="BUS\ChucVuBUS.cs" />
+    <Compile Include="DAO\ChiDoanDAO.cs" />
+    <Compile Include="DAO\ChiTietChucVuDAO.cs" />
+    <Compile Include="DAO\ChiTietChuyenSinhHoatDoanDAO.cs" />
+    <Compile Include="DAO\ChiTietDanhGia_DoanVienDAO.cs" />
+    <Compile Include="DAO\ChucVuDAO.cs" />
+    <Compile Include="DAO\DoanKhoaDAO.cs" />
+    <Compile Include="DAO\DoanVienDAO.cs" />
+    <Compile Include="DAO\HoatDongDanhGia_DoanVienDAO.cs" />
+    <Compile Include="DAO\ThanNhanDAO.cs" />
+    <Compile Include="DTO\ChiTietChucVuDTO.cs" />
+    <Compile Include="DTO\ChiTietChuyenSinhHoatDoanDTO.cs" />
+    <Compile Include="DTO\ChiTietDanhGia_DoanVienDTO.cs" />
+    <Compile Include="DTO\ChucVuDTO.cs" />
+    <Compile Include="DTO\DoanVienDTO.cs" />
+    <Compile Include="DTO\HoatDongDanhGiaDoanVienDTO.cs" />
+    <Compile Include="DTO\ThanNhanDTO.cs" />
+    <Compile Include="Entity\CHIDOAN.cs" />
+    <Compile Include="Entity\CHITIETCHUCVU.cs" />
+    <Compile Include="Entity\CHITIETCHUYENSINHHOATDOAN.cs" />
+    <Compile Include="Entity\CHITIETDANHGIA_BCH.cs" />
+    <Compile Include="Entity\CHITIETDANHGIA_COSODOAN.cs" />
+    <Compile Include="Entity\CHITIETDANHGIA_DOANVIEN.cs" />
+    <Compile Include="Entity\CHITIETHOATDONG.cs" />
+    <Compile Include="Entity\CHITIETPHIEUTHUDOANPHI.cs" />
+    <Compile Include="Entity\CHITIET_KT_KL.cs" />
+    <Compile Include="Entity\CHUCVU.cs" />
+    <Compile Include="Entity\DOANKHOA.cs" />
+    <Compile Include="Entity\DOANVIEN.cs" />
+    <Compile Include="Entity\HOATDONG.cs" />
+    <Compile Include="Entity\HOATDONGDANHGIA_BCH.cs" />
+    <Compile Include="Entity\HOATDONGDANHGIA_COSODOAN.cs" />
+    <Compile Include="Entity\HOATDONGDANHGIA_DOANVIEN.cs" />
+    <Compile Include="Entity\KHENTHUONGKYLUAT.cs" />
+    <Compile Include="Entity\PHIEUTHUDOANPHI.cs" />
+    <Compile Include="Entity\QLDOANVIEN_DATABASE.cs" />
+    <Compile Include="Entity\TAIKHOAN.cs" />
+    <Compile Include="Entity\THAMSO.cs" />
+    <Compile Include="Entity\THANNHAN.cs" />
+    <Compile Include="GUI\ChinhSuaThanNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChinhSuaThanNhan.Designer.cs">
+      <DependentUpon>ChinhSuaThanNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChuyenSinhHoatDoan_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChuyenSinhHoatDoan_View.Designer.cs">
+      <DependentUpon>ChuyenSinhHoatDoan_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PheSoDoan_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PheSoDoan_View.Designer.cs">
+      <DependentUpon>PheSoDoan_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QL_DoanVien_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QL_DoanVien_View.Designer.cs">
+      <DependentUpon>QL_DoanVien_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLiChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLiChucVu.designer.cs">
+      <DependentUpon>QuanLiChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SuaChiTietChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SuaChiTietChucVu.designer.cs">
+      <DependentUpon>SuaChiTietChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TaoDotDanhGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TaoDotDanhGia.Designer.cs">
+      <DependentUpon>TaoDotDanhGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThemChiTietChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ThemChiTietChucVu.designer.cs">
+      <DependentUpon>ThemChiTietChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\ChinhSuaThanNhan.resx">
+      <DependentUpon>ChinhSuaThanNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChuyenSinhHoatDoan_View.resx">
+      <DependentUpon>ChuyenSinhHoatDoan_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PheSoDoan_View.resx">
+      <DependentUpon>PheSoDoan_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QL_DoanVien_View.resx">
+      <DependentUpon>QL_DoanVien_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLiChucVu.resx">
+      <DependentUpon>QuanLiChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SuaChiTietChucVu.resx">
+      <DependentUpon>SuaChiTietChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TaoDotDanhGia.resx">
+      <DependentUpon>TaoDotDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ThemChiTietChucVu.resx">
+      <DependentUpon>ThemChiTietChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
